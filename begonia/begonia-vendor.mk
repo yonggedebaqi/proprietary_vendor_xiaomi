@@ -20,15 +20,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/xiaomi/begonia/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
     vendor/xiaomi/begonia/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
-    vendor/xiaomi/begonia/proprietary/lib/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap.so \
-    vendor/xiaomi/begonia/proprietary/lib/libpowerhalwrap_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap_jni.so \
-    vendor/xiaomi/begonia/proprietary/lib/libpowerkeeper_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerkeeper_jni.so \
     vendor/xiaomi/begonia/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
     vendor/xiaomi/begonia/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
     vendor/xiaomi/begonia/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
     vendor/xiaomi/begonia/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
     vendor/xiaomi/begonia/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
     vendor/xiaomi/begonia/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
+    vendor/xiaomi/begonia/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/begonia/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/begonia/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/xiaomi/begonia/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
     vendor/xiaomi/begonia/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
@@ -50,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/libneuron_opencv_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuron_opencv_delegate.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/libneuronusdk_adapter.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuronusdk_adapter.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/libnir_neon_driver_ndk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnir_neon_driver_ndk.mtk.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/libtflite_mtk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtflite_mtk.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/libvpuapi.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvpuapi.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.apusys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.apusys@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.utils@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.utils@1.0.so \
@@ -58,19 +56,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.atci@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.atci@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.camera.postproc@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.dfps@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.gpu@1.0.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@1.0.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib/vendor.mediatek.hardware.vpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.vpu@1.0.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib64/drm/cta/libdrmctaplugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/drm/cta/libdrmctaplugin.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    vendor/xiaomi/begonia/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib64/libapuwareapusys.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareapusys.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib64/libapuwareutils.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareutils.mtk.so \
     vendor/xiaomi/begonia/proprietary/system_ext/lib64/libapuwarexrp.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwarexrp.mtk.so \
@@ -387,7 +378,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
-    vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.udc_lib.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.udc_lib.rc \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
     vendor/xiaomi/begonia/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
@@ -614,9 +604,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_spk_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_spk_game.bin \
     vendor/xiaomi/begonia/proprietary/vendor/etc/pdc.txt:$(TARGET_COPY_OUT_VENDOR)/etc/pdc.txt \
     vendor/xiaomi/begonia/proprietary/vendor/etc/pm_test_item_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pm_test_item_config.xml \
-    vendor/xiaomi/begonia/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/xiaomi/begonia/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    vendor/xiaomi/begonia/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/xiaomi/begonia/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml \
     vendor/xiaomi/begonia/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/xiaomi/begonia/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -845,21 +832,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/xiaomi/begonia/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/android.hardware.power-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power-V1-ndk_platform.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/xiaomi/begonia/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_gift.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375af_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375af_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375af_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375af_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375alpha_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375alpha_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375alpha_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375alpha_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375beta_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375beta_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc2375beta_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc2375beta_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc5035_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc5035_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/gc5035_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc5035_mipi_raw_tuning.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
@@ -878,234 +856,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/lights.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6785.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/memtrack.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6785.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/nfc_nci.nqx.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.nqx.default.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/hw/power.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6785.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.touch.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/sound_trigger.primary.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.mt6785.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/thermal.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.mt6785.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/jcos_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/jcos_client.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.core.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.af.core.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.af.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.awb.core.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.awb.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.ccudrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ccudrv.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.ccuif.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ccuif.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.flash.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.gma.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.lce.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.n3d3a.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_HDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_MFSR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_MFSR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Video_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Video_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375afmipiraw_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375afmipiraw_Zoom_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375alphamipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375alphamipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375alphamipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375alphamipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375alphamipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375alphamipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375betamipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375betamipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375betamipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375betamipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc2375betamipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc2375betamipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc5035mipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc5035mipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc5035mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc5035mipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_gc5035mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc5035mipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_HDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_MFSR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_MFSR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Video_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Video_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10afmipiraw_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10afmipiraw_Zoom_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10alphamipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10alphamipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10alphamipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10alphamipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10alphamipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10alphamipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10betamipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10betamipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10betamipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10betamipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov02a10betamipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02a10betamipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_HDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video720P_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video720P_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video720P_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video720P_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video_Face_Preview_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video_Face_Preview_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Video_Preview_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Video_Preview_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video720P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video720P_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video720P_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_EIS_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ofilmmipiraw_Zoom_Video_EIS_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_HDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video720P_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video720P_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video720P_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video720P_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video_Face_Preview_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video_Face_Preview_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Video_Preview_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Video_Preview_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video720P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video720P_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video720P_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_EIS_2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856sunnymipiraw_Zoom_Video_EIS_2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_3rd_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_3rd_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_AutoHDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_AutoHDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_FaceUnlock_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_FaceUnlock_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Portrait_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_QQ_Capture_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_QQ_Capture_1080P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_QQ_Capture_480P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_QQ_Capture_480P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_Scene_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1ofilmmipiraw_YUV_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1ofilmmipiraw_YUV_Reprocess.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_3rd_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_3rd_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_AutoHDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_AutoHDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_FaceUnlock_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_FaceUnlock_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Portrait_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_QQ_Capture_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_QQ_Capture_1080P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_QQ_Capture_480P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_QQ_Capture_480P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_Scene_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_Scene_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t1sunnymipiraw_YUV_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t1sunnymipiraw_YUV_Reprocess.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_3rd_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_3rd_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_AutoHDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_AutoHDR_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_FaceUnlock_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_FaceUnlock_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Portrait_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_QQ_Capture_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_QQ_Capture_1080P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_QQ_Capture_480P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_QQ_Capture_480P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_Scene_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_Scene_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5k3t2mipiraw_YUV_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5k3t2mipiraw_YUV_Reprocess.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Face_Capture_64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Face_Capture_64.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_HDR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_MFSR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_QQ_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_QQ_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_QQ_Capture_ChatMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_QQ_Capture_ChatMode.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Capture_64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Capture_64.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_SuperNS_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Torch_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_1080P_60fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_1080P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_1080P_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_480P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_480P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_4K_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_1080P_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_1080P_120fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_240fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_720P_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_EIS_Default.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_EIS_Default.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_Video_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_portrait_capture_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_portrait_capture_full.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1ofilmmipiraw_portrait_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1ofilmmipiraw_portrait_preview_full.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Face_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Face_Capture_64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Face_Capture_64.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Flash_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Flash_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Flash_Preview_PF.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_HDR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_MFSR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_QQ_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_QQ_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_QQ_Capture_ChatMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_QQ_Capture_ChatMode.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Reserved.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Reserved.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture_64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture_64.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture_HWNR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Capture_HWNR.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Face_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_SuperNS_Scene_Preview.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Torch_Capture.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_1080P_60fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_1080P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_1080P_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_480P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_480P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_4K.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_4K.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_4K_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_4K_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_4K_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_4K_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_720P.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_1080P_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_1080P_120fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_240fps.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_720P_EIS.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_EIS_Default.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_EIS_Default.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_Zoom1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_Video_Zoom2.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_portrait_capture_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_portrait_capture_full.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libCamera_s5kgw1sunnymipiraw_portrait_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgw1sunnymipiraw_portrait_preview_full.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDR.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libJpgEncPipe.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libMtkOmxAdpcmDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAdpcmDec.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libMtkOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAlacDec.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libMtkOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxApeDec.so \
@@ -1117,14 +881,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkSpeechEnh.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibraryWrapper.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX338PdafLibrary.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX338PdafLibraryWrapper.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX386PdafLibrary.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX386PdafLibraryWrapper.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519PdafLibrary.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519PdafLibraryWrapper.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/lib_smartpa_nxp_ap.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_smartpa_nxp_ap.so \
@@ -1135,7 +891,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libakm.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
@@ -1160,34 +915,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.ArcCamEngine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.ArcCamEngine.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.feature_utils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.log.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.hal3a.v3.lscMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.lscMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.hal3a.v3.lsctbl.50.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.lsctbl.50.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.nvram.50.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.iopipe.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.pdtblgen.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.utils.sensorprovider.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcam3a_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam3a_imem.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamalgo.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.flicker.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.ispfeature.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.lsc.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamalgo.vpunr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.vpunr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamdrv_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_imem.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_isp.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_tuning_mgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_twin.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcapctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapctrl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccci_util.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcharon-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcharon-ss.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libchromanr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromanr.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcmdl_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcmdl_ndk.mtk.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcrypto-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-md.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcrypto-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-ss.so \
@@ -1195,12 +927,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcurl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-ss.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_drv.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libdip_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_imem.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_postproc.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpframework.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdre.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature.stereo.provider.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpspolicy.so \
@@ -1225,50 +953,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwm.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio_plat_drv.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio_plat_pipe.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimgsensorca.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsg_log.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libispcameraca.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_vendor.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmisound.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmisound.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmnetlink_v104.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmnl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtcloader.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_drvb.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkares.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.atmseventmgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.eventcallback.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.logicalmodule.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_calibration_convertor.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_calibration_provider.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_debugutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_exif.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_grallocutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_hwutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_imgbuf.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_mapping_mgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_metadata.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_metastore.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulehelper.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_stdutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_streamutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_sysutils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_tsf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_tsf.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_tuning_utils.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_ulog.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
@@ -1287,15 +986,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnvram_daemon_callback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_daemon_callback.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnvram_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_platform.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_sec.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnwk_opt_halwrap_vendor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxp_extamp_intf.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnxprecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxprecord.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libnxpspeech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxpspeech.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpixelflinger.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_prot.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
@@ -1314,8 +1009,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libteeclientjni@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni@1.1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/libtflite_mtk_static_R.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk_static_R.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtlcWidevineModularDrm.so \
@@ -1348,26 +1041,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/libwvkeyboxext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeyboxext.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.nqx.default.hw.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10af_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10af_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10af_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10af_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10alpha_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10alpha_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10alpha_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10alpha_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10beta_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10beta_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov02a10beta_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02a10beta_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov8856ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov8856ofilm_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov8856ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov8856ofilm_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov8856sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov8856sunny_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/ov8856sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov8856sunny_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t1ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t1ofilm_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t1ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t1ofilm_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t1sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t1sunny_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t1sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t1sunny_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t2_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5k3t2_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k3t2_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5kgw1ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgw1ofilm_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5kgw1ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgw1ofilm_mipi_raw_tuning.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5kgw1sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgw1sunny_mipi_raw_IdxMgr.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/s5kgw1sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgw1sunny_mipi_raw_tuning.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/se_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/se_extn_client.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/secure_element-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/secure_element-impl.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
@@ -1375,10 +1048,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.postproc@1.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dfps@1.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.gpu@1.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
@@ -1389,12 +1058,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.5.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.netdagent@1.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
-    vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.power@2.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.0.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.1.so \
     vendor/xiaomi/begonia/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.2.so \
@@ -2125,6 +1791,7 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     com.android.hotwordenrollment.common.util \
+    mfp-daemon \
     android.hardware.gpu@1.0-service \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
     android.hardware.wifi.hostapd \
@@ -2132,6 +1799,5 @@ PRODUCT_PACKAGES += \
     lights-mtk-default \
     manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
-    mfp-daemon \
     power-mtk-default \
     vibrator-mtk-default
